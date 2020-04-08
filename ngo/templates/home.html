@@ -1,0 +1,45 @@
+{%extends "base.html"%}
+<!DOCTYPE html>
+{%load staticfiles%}
+
+  {%block head_block%}
+    <link rel="stylesheet" href="{%static "home.css"%}">
+    <link rel="stylesheet" href="{%static "base.css"%}">
+    <title>Home</title>
+  {%endblock%}
+
+  {%block body_block%}
+  <!-- Alert -->
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>Notice - </strong> Due to COVID-19, Route India is temporarily inactive.<br>
+    Stay tuned to our instagram and facebook pages for updates.
+  </div>
+  <!-- home header -->
+  <div class="headers">
+
+        <div class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url({% static 'r_team.jpg' %});">
+          <div class="hero-text">
+            <h1>Be a ROUTE to a  better India</h1>
+          </div>
+        </div>
+        <div class="header2" style="background-image: url({% static 'ent.jpg' %});">
+          <div class="text-block">
+            <h2><strong>THE PROBLEM</strong></h2>
+            <div class="facts">
+              <div>
+                <h1>24 million</h1>
+                <p>tonnes of waste is left uncollected in India</p>
+              </div>
+              <div>
+                <h1>1000</h1>
+                <p>children die in India every day from pollution induced diseases</p>
+              </div>
+              <div>
+                <h1>>100</h1>
+                <p>animals die each year in Jaipur alone due to garbage consumption</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  {%endblock%}

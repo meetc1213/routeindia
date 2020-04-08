@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static "boots/css/bootstrap.min.css"%}">
+    <link rel="stylesheet" href="{%static "base.css"%}">
+
+    {%block head_block%}
+    <title></title>
+    {%endblock%}
+  </head>
+
+  <body>
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="navbar">
+      <div class="navbar-header">
+      <a href="#" id="logo"><img src="{%static 'rlogo.jpg'%}" alt=""class = "img-responsive" ></a>
+      </div>
+     <a  class="anc" href="{% url 'home' %}">Home</a>
+     <a  class="anc" href="{% url 'aboutus' %}">The Team</a>
+     <a  class="anc" href="{% url 'drives' %}">Our Drives</a>
+     <a  class="anc" href="{% url 'contactus' %}">Contact Us</a>
+     <a  class="anc" id="rb" href="https://routebrasil.org/"><img src="{%static "br.png"%}" alt="" id="rbi"></a>
+     <a  class="anc" id="rusa" href="https://routeusa.org/"><img src="{%static "us.png"%}" alt=""id="rusai"></a>
+     <div class="topnav-right">
+       <a href="#fb" class="fa fa-facebook" id="social"></a>
+       <a href="https://www.instagram.com/routeindia_/" class="fa fa-instagram" id="social"></a>
+     </div>
+
+    </div>
+    {%block body_block%}
+    {%endblock%}
+    <!-- Footer -->
+    <div class="footer">
+      <div class="address column">
+        <h3><u>Address</u></h3>
+        <p> Jayshree Periwal International School <br> Mahapura Rd, Narayan-Y-Block,<br> Sez, Mahapura,<br> Rajasthan 302026<br><a href="https://goo.gl/maps/YUizjEdbNsVeuKeE9"><u>Show on map</u></a></p>
+      </div>
+      <div class="links column">
+        <img src="{%static "rlogo.jpg"%}" alt="" class = "img-responsive footerlogo" >
+        <h3><u>Menu</u></h3>
+        <a   href="{% url 'home' %}"><p>Home</p></a>
+        <a   href="{% url 'aboutus' %}"><p>The Team</p></a>
+        <a   href="{% url 'drives' %}"><p>Our Drives</p></a>
+        <a   href="{% url 'contactus' %}"><p>Contact Us</p></a>
+      </div>
+      <div class="media">
+        <h3><u>Follow Us</u></h3>
+        <a href="#fb" class="fa fa-facebook" id="socialf"></a>
+        <a href="https://www.instagram.com/routeindia_/" class="fa fa-instagram" id="sociali"></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p >Copyright © 2020 Route India.<br> All rights reserved. </p>
+    </div>
+    <script src="{%static "boots/jquery.js"%}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="{% static "boots/js/bootstrap.min.js"%}"></script>
+    <script src="{% static "base.js"%}"></script>
+    {%block script_block%}
+    {%endblock%}
+  </body>
+</html>
