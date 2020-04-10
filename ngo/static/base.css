@@ -57,7 +57,7 @@ html{
 }
 
 }
-.fa {
+.socials {
   padding: 0px;
   font-size: 30px;
   width: 50px;
@@ -67,15 +67,11 @@ html{
 }
 
 
-.fa-facebook .fa-facebook:hover{
+.socials:hover{
   background: #19233e;
   color: white;
 }
 
-.fa-instagram {
-  background: #19233e;
-  color: white;
-}
 .topnav-right {
   float: right;
   margin-right: 20px
@@ -84,8 +80,10 @@ html{
   margin-left: 10px;
   padding:50px;
 }
+
 #rb img,#rusa img{
 margin: auto;
+
 }
 #rbi,#rusai{
   margin: auto;
@@ -150,7 +148,7 @@ margin: auto;
   color: white;
   padding-top: 50px;
 }
-#sociali{
+#sociali,#socialf{
   background-color: #19233e;
 }
 .break{
@@ -169,6 +167,15 @@ margin: auto;
   margin-bottom: 0;
   width: 35%;
   text-align: center;
+}
+.jumbotron{
+  color: #272829;
+}
+.double {
+  background-image: linear-gradient(to bottom, #07ab3e 33%, transparent 33%, transparent 66%, #07ab3e 66%, #07ab3e);
+  background-position: 0 1.03em;
+  background-repeat: repeat-x;
+  background-size: 20px 6px;
 }
 @media screen and (max-width:700px){
   .topnav a{
