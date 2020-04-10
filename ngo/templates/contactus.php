@@ -1,13 +1,3 @@
-<?php
-// the message
-$msg = "First line of text\nSecond line of text";
-
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
-
-// send email
-mail("mdc8464@gmail.com","My subject",$msg);
-?>
 {%extends "base.html"%}
 <!DOCTYPE html>
 {%load staticfiles%}
@@ -47,7 +37,8 @@ mail("mdc8464@gmail.com","My subject",$msg);
                 <div class="large-12 columns">
                   <h3>Or write to us</h3>
                 </div>
-                <form id="contactform" action="formmail.php" method="post">
+                <form id="contactform" action="" method="POST">
+                  {%csrf_token%}
                     <div class="row">
                       <div class="large-6 columns">
                         <div class="form-group">
