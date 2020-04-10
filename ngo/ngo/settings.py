@@ -23,7 +23,7 @@ STATIC_DIR = os.path.join(BASE_DIR,'static')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '48z%&)o^6#k_y#^v$yo(ec9heh^=)04bu#2x3!%op6yfm+lrng'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['routeindia.herokuapp.com']
 
 # Application definition
